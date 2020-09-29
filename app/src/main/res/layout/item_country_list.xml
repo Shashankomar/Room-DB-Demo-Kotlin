@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp_16"
+    android:layout_marginVertical="@dimen/dp_8"
+    android:background="@color/extra_light_blue">
+
+    <TextView
+        android:id="@+id/tv_country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_toStartOf="@+id/tv_country_detail_btn"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        tools:text="country name" />
+
+    <TextView
+        android:id="@+id/tv_country_detail_btn"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/dp_2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        android:text="More Info :" />
+
+
+</RelativeLayout>

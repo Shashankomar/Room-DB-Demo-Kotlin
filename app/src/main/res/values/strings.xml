@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Room DB Demo</string>
+    <string name="countries_in_asia">Countries in Asia</string>
+    <string name="this_is_an_image_of_country">this is an image of country</string>
+</resources>

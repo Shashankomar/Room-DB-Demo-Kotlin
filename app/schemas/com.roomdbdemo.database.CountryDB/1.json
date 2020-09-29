@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "7250335fe075f75a63fceead3d593990",
+    "entities": [
+      {
+        "tableName": "Country",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `country_name` TEXT, `country_capital` TEXT, `country_region` TEXT, `country_subregion` TEXT, `languages` TEXT, `flag_image` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "countryName",
+            "columnName": "country_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "capital",
+            "columnName": "country_capital",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "region",
+            "columnName": "country_region",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subRegion",
+            "columnName": "country_subregion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "languages",
+            "columnName": "languages",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "flag",
+            "columnName": "flag_image",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7250335fe075f75a63fceead3d593990')"
+    ]
+  }
+}
